@@ -1,12 +1,11 @@
-import App, { Container } from "next/app";
-
+import React from 'react'
+import App from "next/app";
+import { test } from '../utils'
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <Container>
-        <Component {...pageProps} />
-      </Container>
+      <Component {...pageProps} />
     );
   }
 }
