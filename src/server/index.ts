@@ -3,6 +3,10 @@ import next from "next";
 import Router from "koa-router";
 import session from "koa-session";
 import dotenv from "dotenv";
+import cors from '@koa/cors'
+import shopifyAuth from '@/server/middlewares/shopifyAuth'
+import { verifyRequest } from '@shopify/koa-shopify-auth'
+import bodyParser from 'koa-bodyparser'
 
 dotenv.config();
 
@@ -20,7 +24,11 @@ app.prepare().then(() => {
   const router = new Router();
   const { SHOPIFY_API_SECRET } = process.env
   server.keys = [SHOPIFY_API_SECRET as string]
+  server.use(cors())
   server.use(session({ secure: true, sameSite: 'none' }, server))
+  server.use(bodyParser())
+  server.use(shopifyAuth())
+  server.use(verifyRequest())
 
   router.get("(.*)", async (ctx: any) => {
     await handle(ctx.req, ctx.res);
