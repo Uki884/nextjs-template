@@ -26,9 +26,9 @@ const _Button = styled.button`
   }
 `
 
-export const BaseButton = ({ children, color }: any) => {
+export const BaseButton = ({ children, color, onClick }: any) => {
   return (
-    <_Button color={color}>
+    <_Button color={color} onClick={()=> onClick()}>
       { children }
     </_Button>
   )

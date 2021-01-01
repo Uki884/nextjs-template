@@ -1,11 +1,13 @@
 import React from 'react'
 import App from "next/app";
-import { test } from '../utils'
+import { RecoilRoot } from 'recoil'
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <Component {...pageProps} />
+      <RecoilRoot>
+        <Component {...pageProps} />
+      </RecoilRoot>
     );
   }
 }
