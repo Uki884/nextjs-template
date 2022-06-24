@@ -25,6 +25,7 @@
         "src/*"
       ]
     },
+    "incremental": true
   },
   "include": [
     "src/**/*"
