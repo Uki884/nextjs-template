@@ -1,6 +1,6 @@
 import { $Container } from './styled';
 import { useCount } from './hooks/useCount';
-import { BaseButton } from '@/components/common/BaseButton';
+import { BaseButton } from '@/components/BaseButton';
 
 export const Home = () => {
   const { count, setCount } = useCount()
