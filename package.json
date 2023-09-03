@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "dotenv": "^16.3.1",
@@ -25,16 +26,16 @@
     "tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
-    "eslint": "^8.48.0",
-    "eslint-plugin-react": "^7.33.2",
-    "@typescript-eslint/eslint-plugin": "^6.5.0",
-    "@typescript-eslint/parser": "^6.5.0",
-    "@testing-library/react": "^14.0.0",
     "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/react": "^14.0.0",
     "@types/node": "^20.5.9",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.5.0",
+    "@typescript-eslint/parser": "^6.5.0",
     "@vitejs/plugin-react": "^4.0.4",
+    "eslint": "^8.48.0",
+    "eslint-plugin-react": "^7.33.2",
     "happy-dom": "^10.11.2",
     "typescript": "^5.2.2",
     "vitest": "^0.34.3"

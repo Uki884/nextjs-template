@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsxImportSource": "@emotion/react",
     "sourceMap": true,
     "noImplicitAny": true,
     "target": "ESNEXT",

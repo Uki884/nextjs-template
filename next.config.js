@@ -1,6 +1,6 @@
 const path = require('path')
 
-export default {
+module.exports = {
   webpack(config, options) {
     config.resolve.alias['@'] = path.join(__dirname, 'src')
     return config
